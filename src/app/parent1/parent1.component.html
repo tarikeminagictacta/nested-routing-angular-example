@@ -1,0 +1,20 @@
+<h2>This is parent 1</h2>
+<small>
+  This parent has children that are nested, so if we want to display those children, we will need to
+  use router outlet in this component. This part of explanation will be shared among both children
+</small>
+
+<ul>
+  <li>
+    <a [routerLink]="['/parent1/child1']" routerLinkActive="router-link-active" >
+      Child 1
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/parent1/child2']" routerLinkActive="router-link-active" >
+      Child 2
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,23 @@
+
+<h1>This is app component</h1>
+<small>All level 1 routes will be loaded here (parent1, parent2, parent3)</small>
+
+<ul>
+  <li>
+    <a [routerLink]="['/parent1']" routerLinkActive="router-link-active" >
+      Parent 1
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/parent2']" routerLinkActive="router-link-active" >
+      Parent 2
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/parent3', 1]" routerLinkActive="router-link-active" >
+      Parent 3
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
